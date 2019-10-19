@@ -18,8 +18,4 @@ sudo ./uninstall.sh
 This will disable the battery status polling service
 and remove previously-installed scripts and files.
 
-It will not remove the desktop panel item. To remove that 
-simply right-click (_or Ctrl-click_) the item and select 
-`Remove`.
-
 ## Customisation
