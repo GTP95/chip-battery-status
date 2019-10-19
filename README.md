@@ -1,4 +1,4 @@
-# CHIP battery status for xfce4 desktop
+# CHIP battery status for headless server
 
 A simple script to display battery percentage 
 on the xfce4 desktop of NextThing.co's CHIP
