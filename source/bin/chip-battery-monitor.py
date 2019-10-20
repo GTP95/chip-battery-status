@@ -2,7 +2,7 @@
 
 import subprocess
 
-cmd="poweroff"	#specifies the command to run on low battery
+cmd="systemctl poweroff"	#specifies the command to run on low battery
 
 def main():
 	percentageFile=open("/usr/local/lib/chip-battery-status/percentage", "r")
