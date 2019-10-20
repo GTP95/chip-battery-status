@@ -25,16 +25,9 @@ rm -f /usr/local/lib/chip-battery-status/percentage
 # Remove status update script
 rm -f /usr/local/sbin/chip-battery-update-status
 
-# Remove xfce4-genmon-plugin polling script
-rm -f /usr/local/bin/chip-battery-xfce-genmon
+# Remove polling script
+rm -f /usr/local/bin/chip-battery-monitor
 
 echo ""
 echo "Done!"
-echo ""
-echo "You can now remove the Generic Monitor item from the xfce4 desktop panel."
-echo ""
-echo "If you're not using xfce4-genmon-plugin for anything else you can"
-echo "remove it with:"
-echo ""
-echo "sudo apt remove xfce4-genmon-plugin"
 echo ""
