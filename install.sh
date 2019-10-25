@@ -25,9 +25,9 @@ systemctl start chip-battery-status-update.timer
 systemctl enable chip-battery-status-update.timer
 
 # Copy polling script
-cp ./source/bin/chip-battery-monitor /usr/local/bin/
+cp ./source/bin/chip-battery-monitor.py /usr/local/bin/
 # Change permissions so everybody can read or execute the script, but nobody can modify it
-chmod 0555 /usr/local/bin/chip-battery-monitor
+chmod 0555 /usr/local/bin/chip-battery-monitor.py
 
 echo ""
 echo "Done!"
