@@ -13,6 +13,6 @@ def main():
 	isChargingFile=open("/usr/local/lib/chip-battery-status/charging", "r")
 	percentage=percentageFile.read()
 	isCharging=isChargingFile.read()
-	if percentage<=5 && isCharging==0:
-		logging.info('I think battery is at %i\% so I'm shutting down C.H.I.P.', percentage)
+	if percentage<=5 and isCharging==0:
+		logging.info('I think battery is at %i\% so I\'m shutting down C.H.I.P.', percentage)
 		subprocess.call(cmd, shell=True)
