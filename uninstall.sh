@@ -13,20 +13,15 @@ then
 fi
 
 # Disable updater service
-systemctl stop chip-battery-status-update.timer
-systemctl disable chip-battery-status-update.timer
-rm -f /etc/systemd/system/chip-battery-status-update.service
-rm -f /etc/systemd/system/chip-battery-status-update.timer
-
-# Remove status files
-rm -f /usr/local/lib/chip-battery-status/charging
-rm -f /usr/local/lib/chip-battery-status/percentage
-
-# Remove status update script
-rm -f /usr/local/sbin/chip-battery-update-status
+echo "Stopping, disabling and removing systemd units"
+systemctl stop chip-battery-status-check.timer
+systemctl disable chip-battery-status-check.timer
+rm -f /etc/systemd/system/chip-battery-status-check.service
+rm -f /etc/systemd/system/chip-battery-status-check.timer
 
 # Remove polling script
-rm -f /usr/local/bin/chip-battery-monitor
+echo "Removing battery checking script"
+rm -f /usr/local/bin/chip-battery-monitor.py
 
 echo ""
 echo "Done!"

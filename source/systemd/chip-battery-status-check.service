@@ -1,0 +1,6 @@
+[Unit]
+Description=Check C.H.I.P. battery status and act accordingly
+
+[Service]
+ExecStart=/usr/local/bin/chip-battery-monitor.py
+Nice=19
